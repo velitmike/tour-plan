@@ -401,7 +401,7 @@ template {
   color: #333333;
 }
 
-.search__input__button {
+.search__button {
   position: absolute;
   top: 0;
   right: 0;
