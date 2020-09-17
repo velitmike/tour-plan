@@ -1,3 +1,7 @@
+// Правила формирования имен
+// block-name__elem-name_mod-name_mod-val
+// Каждый пробел должен быть на своем месте, иначе кранты
+block-name__elem-name_mod-name_mod-val
 .navbar 
 	background-color: #fff
 	&-top
@@ -9,6 +13,25 @@
 	&__search
 		margin-right: auto
 		margin-left: 108px
+	&-bottom /**название блока	**/
+		background-color: $dark
+	&-menu /** название блока **/
+		list-style-type: none /** Убираем точки возле меню **/ 
+		margin: 0
+		padding: 31px 0
+		// padding: 0
+		display: flex
+		align-items: center
+		justify-content: space-between
+		color: $light
+		&__link /** название элемента **/
+			color: inherit /** делаем цвет ссылок белым **/
+			text-decoration: none /** убираем подчеркивание ссылок **/
+			text-transform: uppercase /** текст ссылок делаем заглавными буквами **/
+			font-size: 14px
+			line-height: 18px
+.logo
+	width: 177px
 .search
 	display: flex
 	position: relative
@@ -26,13 +49,13 @@
 		line-height: 15px
 		color: $text-color
 	&__button
-			position: absolute
-			top: 0
-			right: 0
-			width: 65px
-			height: 100%
-			border: none
-			background-color: $primary
+		position: absolute
+		top: 0
+		right: 0
+		width: 65px
+		height: 100%
+		border: none
+		background-color: $primary
 .user
 	display: flex
 	align-items: center
