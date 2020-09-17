@@ -497,7 +497,6 @@ template {
   }
   __search {
     margin-left: auto;
-    max-width: 340px;
   }
   -menu {
     padding-top: 22px;
@@ -506,6 +505,9 @@ template {
   -menu__link {
     font-size: 12px;
     line-height: 15px;
+  }
+  .search__input {
+    width: 340px;
   }
 }
 
