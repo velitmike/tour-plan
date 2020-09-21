@@ -633,7 +633,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px;
-  background-color: red;
+  background-color: transparent;
 }
 
 .slider-button--next {
@@ -642,6 +642,7 @@ template {
 }
 
 .slider-button--prev {
+  left: 18px;
   background-image: url(../img/arrow-prev.svg);
 }
 
