@@ -963,4 +963,16 @@ template {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width: 460px) {
+  .logo {
+    width: 99px;
+  }
+  .slider {
+    height: 179px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
