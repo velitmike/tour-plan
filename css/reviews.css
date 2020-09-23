@@ -1,0 +1,13 @@
+.reviews {
+  padding: 140px 0 170px 0;
+}
+
+.reviews__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 45px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=reviews.css.map */
