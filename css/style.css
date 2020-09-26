@@ -510,8 +510,6 @@ template {
 .hotel {
   padding-top: 23px;
   padding-bottom: 70px;
-  /** 	margin-top: 4px **/
-  /** 	margin-bottom: 0 **/
 }
 
 .hotel-info {
@@ -544,6 +542,8 @@ template {
 .hotel-name {
   font-size: 24px;
   line-height: 30px;
+  /** 	margin-top: 4px **/
+  /** 	margin-bottom: 0 **/
 }
 
 .hotel-wrapper {
@@ -1131,19 +1131,17 @@ template {
   .hotel-slider {
     width: 590px;
   }
-  .hotel-slide__image {
-    width: 100%;
+  .hotel-slider__image {
     height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .map {
-    width: 347px;
+    width: 340px;
   }
 }
 
 @media (max-width: 992px) {
-  .container, .newsletter-wrapper {
+  .container,
+  .newsletter-wrapper {
     max-width: 700px;
   }
   .logo {
@@ -1274,10 +1272,13 @@ template {
     width: 100%;
   }
   .map {
-    width: 450px;
+    width: 100%;
     margin-left: 0;
     /** 	.mymap **/
     /** 	width: 100% **/
+  }
+  .newsletter {
+    padding: 92px 0 93px 0;
   }
   .newsletter-wrapper {
     max-width: 576px;
@@ -1289,6 +1290,13 @@ template {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+  .reviews {
+    padding-bottom: 60px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    margin-bottom: 50px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -1325,14 +1333,6 @@ template {
   }
 }
 
-.subscribe {
-  width: 100%;
-}
-
-.newsletter {
-  padding: 76px 0 83px 0;
-}
-
 .newsletter__title {
   margin-bottom: 37px;
 }
@@ -1346,6 +1346,39 @@ template {
   }
   .hotel__slider {
     margin-bottom: 20px;
+  }
+  .subscribe {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .newsletter {
+    padding: 76px 0 83px 0;
+  }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subscribe {
+    width: 280px;
+  }
+  .subscribe__input {
+    padding-left: 20px;
+  }
+  .reviews {
+    padding-bottom: 50px;
+  }
+  .reviews__title {
+    font-size: 23px;
+    margin-bottom: 50px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
 }
 /*# sourceMappingURL=style.css.map */
