@@ -94,6 +94,12 @@
 		&-form
 			grid-column: span 5
 			grid-row: 4
+	.footer-bottom
+		// border: 1px solid white
+		justify-content: flex-start
+		margin-top: 56px
+		&__image
+			margin-left: 170px
 @media (max-width: 768px)
 	.container
 		max-width: 576px
@@ -191,6 +197,16 @@
 	.card
 		width: 49%
 		height: 255px
+	.footer-bottom
+		display: flex
+		justify-content: flex-start
+		flex-direction: column
+		align-items: start
+		&__text
+			margin-top: 15px
+		&__image
+			margin-top: 10px
+			margin-left: 0
 @media (max-width: 576px)
 	.logo
 		width: 99px
@@ -209,7 +225,7 @@
 		&-wrapper
 			grid-template-columns: 1fr
 		&__input
-			flex-basis: 100%
+			flex-basis: 900%
 		&__logo
 			grid-row: 1
 			grid-column: 1
@@ -224,10 +240,11 @@
 			grid-row: 4
 			grid-column: 1
 		&__legal
-			grid-row: 4
+			grid-row: 5
 			grid-column: 1
 		&__contact
 			&-details
+				flex-basis: 90%
 				grid-row: 6
 				grid-column: 1
 			&-form
@@ -255,4 +272,11 @@
 		&-slider
 			&__text
 				text-align: left
+	.footer-reverse	
+		display: flex
+		flex-direction: column-reverse
+		align-items: start
+		&__button
+			margin-top: 15px
+		
 
