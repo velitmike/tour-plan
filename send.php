@@ -29,12 +29,21 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
+<<<<<<< HEAD
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'inikgorbunova@yandex.ru'; // Логин на почте
     $mail->Password   = '12IrInA34'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('inikgorbunova@yandex.ru', 'Велитченко Михаил'); // Адрес самой почты и имя отправителя
+=======
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'velitmike'; // Логин на почте
+    $mail->Password   = '12Mike34'; // Пароль на почте
+    $mail->SMTPSecure = 'ssl';
+    $mail->Port       = 465;
+    $mail->setFrom('velitmike@gmail.com', 'Велитченко Михаил'); // Адрес самой почты и имя отправителя
+>>>>>>> b5e86d5666ffeacd14bac98b203745ae50573755
 
     // Получатель письма
     $mail->addAddress('mvelitchenko@yandex.ru');  
