@@ -13,17 +13,22 @@
 		width: 166px
 		grid-row: 1 / 3
 		align-self: stretch
+	&__legal
+		// align-items: end
+		margin-left: 60px
 	&__categories
 		grid-row: 1 / 4
 	&__social
 		&-links
 			display: flex
-			align-items: center
+			// align-items: center
+			align-item: center
 			min-width: 83px
 			justify-content: space-between
 		&-network
 			display: flex
-			align-items: start
+			align-content: start
+			// align-items: start
 			grid-row: 2 / 4
 			// grid-column: 3/5
 			grid-column: span 2
@@ -56,7 +61,8 @@
 		display: flex
 		align-items: flex-start
 		font-style: normal
-		font-weight: bold
+		font-weight: normal
+		// font-weight: bold
 		font-size: 14px
 		line-height: 160%
 		color: $footer-text-color
@@ -72,35 +78,12 @@
 		text-decoration: none
 		color: inherit
 	&__input
-		background-color: #ffffff
-		border-radius: 4px
-		border: none
-		padding: 0 23px
-		height: 50px
 		margin-bottom: 15px
 		flex-basis: 48%
 	&__message
-		width: 539px
 		height: 123px
-		background-color: #fff
-		border-radius: 4px
-		padding: 18px 23px
-		border: none
-		flex-basis: 100%
 		margin-bottom: 23px
 		resize: none
-	&__button
-		min-width: 160px
-		min-height: 50px
-		padding: 18px
-		font-style: normal
-		font-weight: bold
-		font-size: 12px
-		line-height: 15px
-		color: $light
-		background-color: $primary
-		border: none
-		border-radius: 4px
 	&__info
 		font-style: normal
 		font-weight: bold
@@ -124,8 +107,6 @@
 		margin-left: 277px
 	&__text
 		margin-bottom: 0
-		// width: 286px
-		// height: 15px
 		font-style: normal
 		font-weight: normal
 		font-size: 12px

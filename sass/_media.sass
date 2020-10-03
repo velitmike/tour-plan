@@ -12,8 +12,10 @@
 		width: 230px
 		height: 230px
 	.footer
+		&__legal
+			margin-left: 5px
 		&__input
-			flex-basis: 47%
+			flex-basis: 100%
 @media (max-width: 992px)
 	.container, 
 	.newsletter-wrapper
@@ -72,6 +74,8 @@
 			grid-row-gap: 40px
 		&__input
 			flex-basis: 49%
+		&__legal
+			margin-left: 0
 		&__logo
 			grid-row: 1 / 2
 			grid-column: span 2
@@ -91,9 +95,9 @@
 			&-details
 				grid-column: span 5
 				grid-row: 3				
-		&-form
-			grid-column: span 5
-			grid-row: 4
+			&-form
+				grid-column: span 5
+				grid-row: 4
 	.footer-bottom
 		// border: 1px solid white
 		justify-content: flex-start
@@ -107,6 +111,9 @@
 	body
 		padding-top: 78px
 	.navbar
+		&__search
+			width: 90%
+			margin: auto
 		&__mobile
 			&_fixed
 				position: fixed
@@ -264,7 +271,7 @@
 		&-wrapper
 			grid-template-columns: 1fr
 		&__input
-			flex-basis: 900%
+			flex-basis: 100%
 		&__logo
 			grid-row: 1
 			grid-column: 1
@@ -317,5 +324,15 @@
 		align-items: start
 		&__button
 			margin-top: 15px
+	.footer-bottom
+		display: flex
+		flex-direction: column
+		align-items: start
+		margin-top: 30px
+		&__text
+			margin-top: 0
+		&__image
+			margin-left: 0
+			margin-bottom: 10px
 		
 
