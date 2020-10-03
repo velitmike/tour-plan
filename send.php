@@ -7,6 +7,7 @@ require 'phpmailer/Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
+$email = $_POST['email'];
 $message = $_POST['message'];
 // $file = $_FILES['myfile'];
 
@@ -16,6 +17,7 @@ $body = "
 <h2>Новое обращение</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br><br>
+<b>Email:</b> $email<br><br>
 <b>Сообщение:</b><br>$message
 ";
 
@@ -25,25 +27,16 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";
     $mail->SMTPAuth   = true;
-    $mail->SMTPDebug = 2;
+    // $mail->SMTPDebug = 2;
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-<<<<<<< HEAD
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'inikgorbunova@yandex.ru'; // Логин на почте
     $mail->Password   = '12IrInA34'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('inikgorbunova@yandex.ru', 'Велитченко Михаил'); // Адрес самой почты и имя отправителя
-=======
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'velitmike'; // Логин на почте
-    $mail->Password   = '12Mike34'; // Пароль на почте
-    $mail->SMTPSecure = 'ssl';
-    $mail->Port       = 465;
-    $mail->setFrom('velitmike@gmail.com', 'Велитченко Михаил'); // Адрес самой почты и имя отправителя
->>>>>>> b5e86d5666ffeacd14bac98b203745ae50573755
 
     // Получатель письма
     $mail->addAddress('mvelitchenko@yandex.ru');  
@@ -63,6 +56,6 @@ else {$result = "error";}
 }
 
 // Отображение результата
-echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
+// echo json_encode(["result" => $result, "resultfile" => $rfile, "status" => $status]);
 
-// header('Location: thankyou.html');
+header('Location: thankyou.html');
