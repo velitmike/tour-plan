@@ -1664,6 +1664,21 @@ template {
   .navbar-menu__item_mobile_visible {
     display: block;
   }
+  .modal-reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .modal-reverse__button {
+    margin-top: 15px;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
