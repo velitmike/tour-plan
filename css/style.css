@@ -1422,7 +1422,7 @@ template {
 
 .modal__message {
   width: 100%;
-  min-width: 123px;
+  min-height: 123px;
   margin-bottom: 15px;
   resize: none;
 }
@@ -1475,6 +1475,10 @@ template {
   .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .modal__dialog {
+    width: 478px;
+    padding: 16px 44px;
   }
 }
 
@@ -1839,6 +1843,10 @@ template {
     margin-top: 10px;
     margin-left: 0;
   }
+  .modal__dialog {
+    max-width: 478px;
+    padding: 9px 22px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1943,6 +1951,10 @@ template {
   .footer-bottom__image {
     margin-left: 0;
     margin-bottom: 10px;
+  }
+  .modal__dialog {
+    width: 90%;
+    padding: 9px 22px;
   }
 }
 
