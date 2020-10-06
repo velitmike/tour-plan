@@ -12,7 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,800;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
     <!-- Для Яндекс-карты -->
     <!--  <script -->
@@ -24,7 +25,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" data-aos="fade-right" data-aos-delay="100">
             <img
               src="img/horizontat-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -33,7 +34,7 @@
           </a>
           <form
             action="#"
-            class="search navbar__search navbar__search_mobile_hidden"
+            class="search navbar__search navbar__search_mobile_hidden" data-aos="fade-down" data-aos-delay="400"
           >
             <input
               type="text"
@@ -45,7 +46,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden" data-aos="fade-left" data-aos-delay="800">
             <img
               src="img/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -265,7 +266,7 @@
               <button
                 data-toggle="modal"
                 data-href="#booking-modal"
-                class="button booking__button"
+                class="button booking__button" 
               >
                 View Other Options
               </button>
@@ -328,7 +329,7 @@
     </section>
     <section class="reviews">
       <div class="container">
-        <h2 class="reviews__title">What people thinks about us</h2>
+        <h2 class="reviews__title" data-aos="zoom-out" data-aos-delay="300">What people thinks about us</h2>
         <!-- Slider main container -->
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
@@ -407,7 +408,7 @@
                   <img
                     src="img/reviews-avatar-2.jpg"
                     alt="Photo: Megan Fox"
-                    class="reviews-slider__avatar"
+                    class="reviews-slider__avatar" 
                   />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
@@ -443,7 +444,7 @@
                   <img
                     src="img/reviews-avatar-3.jpg"
                     alt="Photo: Megan Fox"
-                    class="reviews-slider__avatar"
+                    class="reviews-slider__avatar" 
                   />
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
@@ -490,7 +491,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-right" data-aos-delay="100">
             <img
               src="img/activities-1.jpg"
               alt="The curious corner of chamarel"
@@ -500,7 +501,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-right" data-aos-delay="300">
             <img
               src="img/activities-2.jpg"
               alt="Gymkhana club golf course"
@@ -510,7 +511,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-right" data-aos-delay="500">
             <img
               src="img/activities-3.jpg"
               alt="Tamarind falls hiking trip - full day"
@@ -520,7 +521,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="fade-right" data-aos-delay="700">
             <img
               src="img/activities-4.jpg"
               alt="The blue marine discovery questBook Now"
@@ -541,7 +542,7 @@
           <img
             src="img/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
+            class="logo footer__logo" data-aos="zoom-in" data-aos-delay="500"
           />
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
@@ -792,7 +793,8 @@
     <!-- /.modal -->
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/aos.js"></script>
     <script src="js/main.js"></script>
     <!-- <script src="js/mymap.js"></script> -->
     <!-- <script src="js/proba.js"></script> -->
