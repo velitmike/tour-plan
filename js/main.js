@@ -72,7 +72,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "Your phone to contact you",
-          minlength: "9 characters required!",
+          minlength: "11 characters required!",
         },
       },
     });

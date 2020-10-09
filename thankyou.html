@@ -24,7 +24,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/horizontat-logo.svg"
               alt="Logo: Best Tour Plan"
@@ -143,7 +143,7 @@
               <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
             </div>
             <p class="hotel-description hotel-info__description">
-							Наш менеджер позвонит вам через 5 минут.
+              Наш менеджер позвонит вам через 5 минут.
             </p>
           </div>
           <!-- /.hotel-info__text -->
@@ -152,43 +152,21 @@
       </div>
       <!-- /.container -->
     </section>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a href="index.html" class="footer__logo_link">
+            <img
+              src="img/vertical-logo.svg"
+              alt="Logo: Best Tour Plan"
+              class="logo footer__logo"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            />
+          </a>
           <div class="footer__list footer__categories">
             <h3 class="footer__title">ALL CATEGORIES</h3>
-            <ul class="footer__ul">
-              <li class="footer__item">
-                <a href="#" class="footer__link">All Deals </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Hotels </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Activities </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Spa Packages</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Hotel Day Packages</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Restaurants</a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Fitness </a>
-              </li>
-              <li class="footer__item">
-                <a href="#" class="footer__link">Rodrigues</a>
-              </li>
-            </ul>
+            <ul class="footer__ul"></ul>
           </div>
           <!-- /.footer__list -->
           <div class="footer__list footer__additional">
@@ -252,7 +230,7 @@
           </div>
           <!-- /.footer_list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title--mb-2">Contact Details</h3>
+            <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -276,10 +254,23 @@
                     alt="icon: contact-phone-call"
                   />
                 </div>
-                Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00
-                pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div>
+                  <!-- Tel (business hours) : 269 1500 -->
+                  Tel (business hours) :
+                  <a href="tel:2691500" class="footer__business-tel">
+                    269 1500</a
+                  ><br />
+                  Tel (hotline) Monday - Saturday:
+                  <a href="tel:52566138" class="footer__hotline-tel"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 20:00 pm)<br />
+                  Tel (hotline) Sunday:
+                  <a href="tel:52566138" class="footer__hotline-sunday"
+                    >52-56-61-38</a
+                  >
+                  (08:00 am – 14:00 pm)
+                </div>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -289,28 +280,41 @@
                     alt="icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <!-- cherly.lawson@example.com -->
+                <a
+                  href="email: cherly.lawson@example.com"
+                  class="footer__work-email"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-2">Send us a message</h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="4"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="11"
+                />
+              </div>
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -330,16 +334,7 @@
           <!-- /.footer__contact-form -->
         </div>
         <!-- /.footer-wrapper -->
-        <div class="footer-bottom">
-          <p class="footer-bottom__text">
-            Disclaimer Conditions of use Cancellation policy
-          </p>
-          <img
-            src="img/footer-bottom.png"
-            alt=""
-            class="footer-bottom__image"
-          />
-        </div>
+        <div class="footer-bottom"></div>
       </div>
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
